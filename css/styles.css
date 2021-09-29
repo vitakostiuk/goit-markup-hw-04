@@ -73,6 +73,17 @@ body {
 }
 
 /* Контакты хедер*/
+/* .link-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--primary-text-color);
+} */
+
+/* .link:hover,
+.link:focus {
+  fill: var(--accent-color);
+} */
+
 .contacts-nav {
   display: flex;
 }
