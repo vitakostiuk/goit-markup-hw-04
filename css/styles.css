@@ -6,6 +6,7 @@
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-border: 1px solid #eeeeee;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -73,17 +74,6 @@ body {
 }
 
 /* Контакты хедер*/
-/* .link-icon {
-  width: 16px;
-  height: 12px;
-  fill: var(--primary-text-color);
-} */
-
-/* .link:hover,
-.link:focus {
-  fill: var(--accent-color);
-} */
-
 .contacts-nav {
   display: flex;
 }
@@ -113,6 +103,20 @@ body {
 
 .main-nav .link.current {
   color: var(--accent-color);
+}
+
+.mailto-icon {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* Блок герой, футер*/
@@ -196,21 +200,6 @@ body {
 }
 
 /* Преимущества */
-/* .icon {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-} */
-
-/* .icon:nth-child(1) {
-  background-image: url('../images/antenna.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
- */
-
 .feature-list {
   display: flex;
   margin-top: calc(-1 * var(--card-set-gap));
@@ -325,6 +314,46 @@ body {
 .team .position {
   font-size: 16px;
   line-height: 1.2;
+}
+
+.team-employee .social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list .social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-list .social-item + .social-item {
+  margin-left: 10px;
+}
+
+.social-list .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list .social-link:hover,
+.social-list .social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list .social-link:hover .social-icon,
+.social-list .social-link:focus {
+  fill: #ffffff;
+}
+
+.social-list .social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icons-color);
 }
 
 /* Футер */
