@@ -351,23 +351,19 @@ body {
 
 .clients-list .item {
   display: flex;
-  height: 92px;
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   flex-basis: calc(100% / 6 - var(--card-set-gap));
-  border-radius: 4px;
-  border: 1px solid var(--icons-color);
-}
-
-.clients-list .item:hover,
-.clients-list .item:focus {
-  border-color: var(--accent-color);
 }
 
 .clients-list .link {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
 }
 
 .clients-list .icon {
@@ -376,8 +372,13 @@ body {
   fill: var(--icons-color);
 }
 
-.clients-list .item:hover .icon,
-.clients-list .item:focus .icon {
+.clients-list .link:hover,
+.clients-list .link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-list .link:hover .icon,
+.clients-list .link:focus .icon {
   fill: var(--accent-color);
 }
 
