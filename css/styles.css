@@ -332,7 +332,7 @@ body {
 }
 
 .social-list .social-link:hover .social-icon,
-.social-list .social-link:focus {
+.social-list .social-link:focus .social-icon {
   fill: #ffffff;
 }
 
